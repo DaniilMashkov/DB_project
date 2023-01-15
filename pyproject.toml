@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "db-project"
+version = "0.1.0"
+description = ""
+authors = ["DaniilMashkov <dankeeeez@gmail.com>"]
+readme = "README.md"
+packages = [{include = "db_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+psycopg2-binary = "^2.9.5"
+pick = "^2.2.0"
+pandas = "^1.5.2"
+tabulate = "^0.9.0"
+
+[tool.poetry.scripts]
+db = 'main:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
