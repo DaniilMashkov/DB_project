@@ -1,7 +1,12 @@
 ### Программа для работы с БД Northwind Traders посредством консольного интерфейса
 ---
 ##### Предусматривается, что в вашей БД присутствует **schema public** заполненная таблицами [Northwind Traders](https://github.com/DaniilMashkov/DB_project/blob/main/db_project/sql_queries/init_db.sql)
-##### Для запуска  необходимо заполнить *connect* в файле *main.py* собственными данными
+##### Для запуска  необходимо:
+  - Клоннировать репозиторий ( __git clone git@github.com:DaniilMashkov/DB_project.git__ )
+  - Установить используемые в проекте зависимости ( __poetry install__ )
+  - Заполнить *connect.py* собственными данными
+  - Запустить скрипт коммандой __poetry run db__
+  
 --- 
 ![Главное меню](https://i.ibb.co/XsDnvLT/Screenshot-from-2023-01-15-19-41-16.png)
 ![Пример работы](https://i.ibb.co/m4YCBpJ/Screenshot-from-2023-01-15-20-22-46.png)
