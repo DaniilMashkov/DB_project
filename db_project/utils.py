@@ -49,13 +49,13 @@ def get_from_db(conn, main):
 
     match index:
         case 0:
-            sql_parser(conn, 'sql_queries/customers_page.sql')
+            sql_parser(conn, 'db_project/sql_queries/customers_page.sql')
         case 1:
-            sql_parser(conn, 'sql_queries/orders_page.sql')
+            sql_parser(conn, 'db_project/sql_queries/orders_page.sql')
         case 2:
-            sql_parser(conn, 'sql_queries/employees_page.sql')
+            sql_parser(conn, 'db_project/sql_queries/employees_page.sql')
         case 3:
-            sql_parser(conn, 'sql_queries/products_page.sql')
+            sql_parser(conn, 'db_project/sql_queries/products_page.sql')
         case 4:
             main()
 

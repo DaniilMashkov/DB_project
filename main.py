@@ -1,9 +1,10 @@
 from db_project.utils import *
 from psycopg2 import connect
+from config import config
 
 
 def main():
-    conn = connect("dbname=Northwind_Traders user=postgres host=localhost port=5432 password=321456")
+    conn = connect(config)
 
     opt, index = pick(title='Выберете действие: ',
                       options=(' Заполнить таблицу suppliers', ' SQL Запросы',
