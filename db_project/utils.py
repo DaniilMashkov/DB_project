@@ -15,7 +15,7 @@ def fill_tables(conn) -> None:
 
     cur.execute(SQLRequests.create_suppliers_table)
 
-    with open('../data/suppliers.json', 'r') as file:
+    with open('data/suppliers.json', 'r') as file:
         for item in json.load(file):
             GetSupplierInfo.init(item)
             cur.execute(SQLRequests.fill_suppliers, GetSupplierInfo.to_tuple())
